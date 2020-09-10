@@ -1,7 +1,8 @@
 
         <div class="card-body">
             <!--<a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">-->
-              <h2 class="card-title">{{ post.title }}</h2>
+              <h2 class="card-title">{% if post.redirect301 %}
+                En LinkedIn: {% endif %}{{ post.title }}</h2>
               {% if post.subtitle %}
               <p class="card-text">{{ post.subtitle }}</p>
               {% else %}

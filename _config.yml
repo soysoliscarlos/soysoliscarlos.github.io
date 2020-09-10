@@ -1,0 +1,26 @@
+title:              Carlos Solís Salazar
+email:              carlos@soysoliscarlos.com
+description:        Asegurando tu Transformación Digital
+author:             Carlos Solís Salazar
+baseurl:            ""
+url:                ""
+
+# Social Profiles
+twitter_username:   soysoliscarlos
+github_username:    soysoliscarlos
+facebook_username:  soysoliscarlos
+instagram_username: soysoliscarlos
+linkedin_username:  soysoliscarlos
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/blog/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+ 

@@ -1,0 +1,30 @@
+---
+layout: page
+title: "Blog"
+permalink: /Blog/
+background: '/img/bg-post.jpg'
+---
+
+
+
+{% for post in paginator.posts %}
+  {% include listposts.html %}
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+
+<div class="clearfix">
+
+  {% if paginator.previous_page %}
+  <a class="btn btn-primary float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
+    Posts<span class="d-none d-md-inline"> Nuevos</span></a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <a class="btn btn-primary float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Posts<span class="d-none d-md-inline">Anteriores</span> &rarr;</a>
+  {% endif %}
+
+</div>
+
+{% endif %}
